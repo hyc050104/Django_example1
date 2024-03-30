@@ -1,6 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>isnewyear</title></head>
+    <head>
+        <title>isnewyear</title>
+        <link href="{%static 'isnewyear/style.css' %}" rel="stylesheet">
+    </head>
     <body>
         {% if yes %}
         <h1>Yes</h1>
