@@ -1,0 +1,22 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+<h1>Tasks</h1>
+<div style="height:auto;width: 400px;">
+<div style="float: left;height:auto;width: 200px;">
+<ul>
+    {% for item in tasks %}
+    <li>{{ item }}</li>        
+    {% endfor %}
+</ul>
+</div>
+<div style="float: left;height:auto;width: 200px;">
+<ul>
+    {% for item in priority %}
+    <li>{{ item }}</li>        
+    {% endfor %}
+</ul>
+</div>
+</div>
+<div style="height:auto;width: 400px;"><a href="{% url 'tasks:add'%}">Add tasks</a></div>
+{% endblock %}
