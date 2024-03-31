@@ -6,7 +6,9 @@
 <div style="float: left;height:auto;width: 200px;">
 <ul>
     {% for item in tasks %}
-    <li>{{ item }}</li>        
+    <li>{{ item }}</li>   
+    {% empty %}     
+    <li>No Task</li>
     {% endfor %}
 </ul>
 </div>
